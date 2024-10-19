@@ -1,0 +1,16 @@
+{
+  "name": "front",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "start:test": "NODE_ENV=test vite -l silent --host",
+    "watch": "vite",
+    "lint:check": "eslint --ext .ts .",
+    "lint:fix": "eslint --ext .ts --fix .",
+    "format:check": "prettier --check 'src/**/*.ts'",
+    "format:fix": "prettier --write 'src/**/*.ts'"
+  },
+  "devDependencies": {
+    "vite": "^5.3.2"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "todo_app",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "db:reset": "npm run db:reset -w api",
+    "watch:api": "npm run watch -w api",
+    "watch:front": "npm run watch -w front",
+    "test": "npm run test -w e2e",
+    "test:get_tasks": "npm run test:get_tasks -w e2e",
+    "test:add_todo": "npm run test:add_todo -w e2e",
+    "test:done_todo": "npm run test:done_todo -w e2e",
+    "test:clear_all_done_tasks": "npm run test:clear_all_done_tasks -w e2e",
+    "test:welcome_message": "npm run test:welcome_message -w e2e",
+    "lint:check": "npm run lint:check --ws",
+    "lint:fix": "npm run lint:fix --ws",
+    "format:check": "npm run format:check --ws",
+    "format:fix": "npm run format:fix --ws"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "workspaces": [
+    "api",
+    "e2e",
+    "front"
+  ]
+}
