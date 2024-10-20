@@ -27,16 +27,24 @@
           <div class="form__body">
             <input
               class="form__title"
-              id="new-todo-title"
               data-test="input-title"
               placeholder="Add your new todo"
             />
             <button class="form__submit" data-test="submit"></button>
           </div>
         </form>
-        <ul class="task-list" id="task-list-container"></ul>
+        <ul class="task-list">
+          <li class="task task--done">
+            <div class="task__btn"></div>
+            <div data-test="task-title" class="task__title">dummy task</div>
+          </li>
+          <li class="task task--todo">
+            <div class="task__btn"></div>
+            <div data-test="task-title" class="task__title">dummy task</div>
+          </li>
+        </ul>
         <div class="clear">
-          <div class="clear__btn" id="clear-button">
+          <div class="clear__btn">
             <span class="clear__icon material-symbols-outlined">delete</span>
             <span class="clear__title">clear all done tasks</span>
           </div>
